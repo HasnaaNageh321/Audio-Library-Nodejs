@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const { check } = require("express-validator");
 const { signUp, logIn, handleRefreshToken, handleLogout } = require("../controllers/auth.Controller");
-const upload = require("./../config/multer");
+const {upload} = require("./../config/multer");
 const app = express();
 const cookieParser = require("cookie-parser");
 app.use(cookieParser());
